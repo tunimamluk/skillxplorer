@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color:yellow
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Categories Section */
+#categories {
+  display: flex;
+  justify-content: space-around; /* Space between boxes */
+  flex-wrap: wrap; /* Wrap boxes on smaller screens */
+  padding: 20px;
+  gap: 20px; /* Space between rows and columns */
+}
+
+.category {
+  background-color: #ffffff; /* White box background */
+  border: 2px solid #000; /* Black border for boxes */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center-align content */
+  padding: 15px;
+  width: 150px; /* Fixed width for each box */
+  height: 200px; /* Fixed height for each box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category img {
+  width: 150px; /* Set consistent size for the image */
+  height: 150px; /* Keep the height consistent */
+  object-fit: cover; /* Crop the image to fit the box */
+  margin-bottom: 10px; /* Space below the image */
+  border: 2px solid #000; /* Add a black border around the image */
+  border-radius: 5px; /* Slightly round the image corners */
+}
+
+.category h3 {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #000; /* Black text for clarity */
+}
+
+.category:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Footer */
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #categories {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center-align vertically stacked boxes */
+  }
+
+  .category { 
+    width: 80%; /* Make the boxes take more space on smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
