@@ -77,13 +77,14 @@ body {
     color: black;
     font-weight: 400;
   }
-  
+                              
   .span {
     font-size: 14px;
     margin-left: 5px;
     color: #2d79f3;
     font-weight: 500;
     cursor: pointer;
+    background-color: #333;
   }
   
   .button-submit {
