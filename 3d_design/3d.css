@@ -26,16 +26,27 @@ header {
     position: relative;
 }
 .task {
-    width: 100px;
-    height: 110px;
-    background-color: #906a6a;
+    width: 120px;
+    height: 140px;
+    background: linear-gradient(135deg, #c5300b, #f0a871); /* Distinct gradient background */
     position: relative;
     margin: 20px auto;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* White text color for better contrast */
+    font-size: 1.5em; /* Increased font size */
+    font-weight: 700; /* Increased font weight */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
     text-align: center;
-    line-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.get_started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
