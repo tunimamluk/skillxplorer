@@ -1,9 +1,10 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #333;
 }
+
 h1 {
     color: #ffffff;
     font-size: 2em;
@@ -25,12 +26,21 @@ header {
     height: 60px;
     position: relative;
 }
+
+.tasks-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
 .task {
     width: 120px;
     height: 140px;
     background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Distinct gradient background */
     position: relative;
-    margin: 20px auto;
+    margin: 0 auto;
     color: #ffffff; /* White text color for better contrast */
     font-size: 1.5em; /* Increased font size */
     font-weight: 700; /* Increased font weight */
@@ -42,17 +52,55 @@ header {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow */
     border-radius: 10px; /* Rounded corners */
-    top: 480px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: wheat;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 3px solid #a12222;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 300px; /* Maximum width */
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .get_started {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 10px; /* Position from bottom */
+    right: 10px; /* Position from right */
+    width: 30px; /* Width */
+    height: 30px; /* Height */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 5px; /* Smaller padding */
     background-color: #ff7e5f; /* Background color */
     color: white; /* Text color */
     font-size: 0.7em; /* Smaller font size */

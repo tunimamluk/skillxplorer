@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillXplorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="3d.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>3D</title>
 </head>
 <body>
-    <header> <h1>3d design</h1> </header>
-    <div class="task">task 1</div>
-    <!-- <div class="get_started"> <img src="book.webp" alt="" srcset=""></div> -->
-     
+    <header>
+        <h1>SkillXplorer</h1>
+    </header>
+    <main>
+        <div class="tasks-container">
+            <div class="task" onclick="showSquare('model a squre')">Task 1</div>
+            <div class="task" onclick="showSquare('Task 2')">Task 2</div>
+            <div class="task" onclick="showSquare('Task 3')">Task 3</div>
+            <div class="task" onclick="showSquare('Task 4')">Task 4</div>
+            <div class="task" onclick="showSquare('Task 5')">Task 5</div>
+        </div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSquare()">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="3d.js"></script>
 </body>
 </html>
