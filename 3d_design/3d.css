@@ -28,7 +28,7 @@ header {
 .task {
     width: 120px;
     height: 140px;
-    background: linear-gradient(135deg, #c5300b, #f0a871); /* Distinct gradient background */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Distinct gradient background */
     position: relative;
     margin: 20px auto;
     color: #ffffff; /* White text color for better contrast */
@@ -42,11 +42,22 @@ header {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow */
     border-radius: 10px; /* Rounded corners */
+    top: 480px;
 }
 
-.get_started{
+.get_started {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    padding: 2px 5px; /* Smaller padding */
+    background-color: #ff7e5f; /* Background color */
+    color: white; /* Text color */
+    font-size: 0.7em; /* Smaller font size */
+    font-weight: 700; /* Bold text */
+    border-radius: 3px; /* Smaller rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow */
 }
+
